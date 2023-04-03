@@ -1,0 +1,33 @@
+{
+	"env": {
+		"es2022": true,
+		"node": true
+	},
+	"extends": [
+		"standard-with-typescript",
+		"airbnb-base",
+		"airbnb-typescript/base",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:@typescript-eslint/recommended-requiring-type-checking",
+		"plugin:@typescript-eslint/strict",
+		"prettier"
+	],
+	"ignorePatterns": ["node_modules", "dist", "coverage", "pnpm-lock.yaml"],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"project": ["./tsconfig.json", "./test/tsconfig.json"],
+		"sourceType": "module"
+	},
+	"plugins": ["@typescript-eslint"],
+	"rules": {
+		"@typescript-eslint/consistent-type-imports": "error",
+		"@typescript-eslint/no-floating-promises": [
+			"error",
+			{ "ignoreVoid": true }
+		],
+		"@typescript-eslint/prefer-for-of": "off",
+		"no-console": ["error", { "allow": ["warn", "error"] }],
+		"no-void": ["error", { "allowAsStatement": true }]
+	}
+}
