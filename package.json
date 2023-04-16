@@ -1,6 +1,6 @@
 {
 	"name": "watame-proxy",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A cors proxy specifically built for watame",
 	"author": "kylsgl",
 	"license": "MIT",
