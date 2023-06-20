@@ -16,6 +16,9 @@ const proxySchema = {
 			cookie: {
 				type: 'string',
 			},
+			host: {
+				type: 'string',
+			},
 			method: {
 				type: 'string',
 			},

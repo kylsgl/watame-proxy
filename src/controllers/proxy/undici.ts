@@ -32,6 +32,7 @@ async function all(
 		query: {
 			cache,
 			cookie,
+			host,
 			method: requestMethodQuery,
 			redirect,
 			referrer,
@@ -74,6 +75,7 @@ async function all(
 				addRequestHeaders: {
 					'accept-ranges': 'none',
 					cookie,
+					host,
 					referer: referrerUrl,
 				},
 				removeRequestHeaders: ['host', 'keep-alive', 'range', 'upgrade'],

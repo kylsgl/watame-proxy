@@ -49,10 +49,6 @@ export default class ProxyBase {
 			host: hostname,
 		};
 
-		if (options?.addRequestHeaders !== undefined) {
-			Object.assign(newRequestHeaders, options.addRequestHeaders);
-		}
-
 		if (options?.removeRequestHeaders !== undefined) {
 			const { removeRequestHeaders } = options;
 			newRequestHeaders = Object.fromEntries(
@@ -60,6 +56,10 @@ export default class ProxyBase {
 					([key]): boolean => !removeRequestHeaders.includes(key)
 				)
 			);
+		}
+
+		if (options?.addRequestHeaders !== undefined) {
+			Object.assign(newRequestHeaders, options.addRequestHeaders);
 		}
 
 		delete newRequestHeaders.connection;

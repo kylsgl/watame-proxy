@@ -11,6 +11,7 @@ export interface GetProxyRequest {
 	Querystring: {
 		cache: number;
 		cookie: string | undefined;
+		host: string | undefined;
 		method: string | undefined;
 		redirect: boolean;
 		referrer: string | undefined;

@@ -44,6 +44,7 @@ function message(
 	  query parameters
 	  > cache?: number
 	  > cookie?: string
+	  > host?: string
 	  > method?: string
 	  > redirect?: boolean
 	  > referrer?: string
