@@ -7,7 +7,7 @@ import { getReferrer, isValidWebUrls } from '../../lib/utils';
 
 HttpAgent.init({
 	rejectUnauthorized: false,
-	timeout: 5e3,
+	timeout: 15e3,
 });
 
 async function get(

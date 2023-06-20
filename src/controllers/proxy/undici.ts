@@ -13,7 +13,7 @@ UndiciAgent.init({
 	connect: {
 		maxCachedSessions: 10,
 		rejectUnauthorized: false,
-		timeout: 5e3,
+		timeout: 15e3,
 	},
 	keepAliveTimeout: 15e3,
 	keepAliveMaxTimeout: 15e3,

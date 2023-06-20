@@ -102,8 +102,7 @@ describe('GET /v2/{url}', (): void => {
 			});
 
 			expect(statusCode).not.toBe(200);
-		},
-		{ timeout: 15e3 }
+		}
 	);
 });
 

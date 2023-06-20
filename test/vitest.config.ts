@@ -9,6 +9,7 @@ export default defineConfig({
 		globals: true,
 		include: ['./**/*.test.ts'],
 		reporters: 'verbose',
+		testTimeout: 2e4,
 		watch: false,
 	},
 });
