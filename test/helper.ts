@@ -64,4 +64,3 @@ export function build(): FastifyInstance {
 
 	return server;
 }
-// https://www.youtube.com/watch?v=6mrKm3jzy88
